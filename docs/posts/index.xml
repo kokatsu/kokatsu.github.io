@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on kokatsu&#39;s blog</title>
+    <link>https://kokatsu.github.io/posts/</link>
+    <description>Recent content in Posts on kokatsu&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sun, 23 Oct 2022 01:10:09 +0900</lastBuildDate><atom:link href="https://kokatsu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ABC274参加記</title>
+      <link>https://kokatsu.github.io/posts/abc274/</link>
+      <pubDate>Sun, 23 Oct 2022 01:10:09 +0900</pubDate>
+      
+      <guid>https://kokatsu.github.io/posts/abc274/</guid>
+      <description>4完2ペナ93分 2289位
+kokatsuさんのキーエンスプログラミングコンテスト2022（AtCoder Beginner Contest 274）での成績：2289位
+パフォーマンス：975相当
+レーティング：1267→1240 (-27) :(#AtCoder #キーエンスプログラミングコンテスト2022（ABC274） https://t.co/lZV1NNlva1 緑が近くなってきた。。。
+&amp;mdash; kokatsu (@kokatsu_) October 22, 2022 A問題 D言語のreal型の精度を信じて提出。
+import std; void main() { real A, B; readf(&amp;#34;%f %f\n&amp;#34;, A, B); real res = B / A; writefln(&amp;#34;%.3f&amp;#34;, res); } B問題 1行ごとにマスを読み込み、箱が置かれている列をカウントする。
+import std; void main() { int H, W; readf(&amp;#34;%d %d\n&amp;#34;, H, W); auto res = new int[](W); foreach (_; 0 .. H) { string C; readf(&amp;#34;%s\n&amp;#34;, C); foreach (i, c; C) { if (c == &amp;#39;#&amp;#39;) ++res[i]; } } writefln(&amp;#34;%(%s %)&amp;#34;, res); } C問題 番号$2i$と$2i+1$のアメーバは$A_{i}$の世代$+1$になるので、時系列順に処理していく。</description>
+    </item>
+    
+  </channel>
+</rss>

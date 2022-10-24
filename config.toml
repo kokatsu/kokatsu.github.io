@@ -1,0 +1,23 @@
+baseURL = "https://kokatsu.github.io/"
+title = "kokatsu's blog"
+DefaultContentLanguage = "ja"
+languageCode = "ja-jp"
+paginate = "10"
+theme = "mainroad"
+publishDir = "docs"
+
+[Author]
+    name = "kokatsu"
+
+[Params]
+    dateformat = "2006-01-02"
+
+[Params.widgets.social]
+    twitter = "kokatsu_"
+    github = "kokatsu"
+
+[Params.sidebar]
+    home = "right"
+    list = "right"
+    single = "right"
+    widgets = ["search", "recent", "categories", "taglist", "social"]
