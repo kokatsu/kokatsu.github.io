@@ -6,7 +6,24 @@
     <description>Recent content in 競プロ on kokatsu&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 23 Oct 2022 01:10:09 +0900</lastBuildDate><atom:link href="https://kokatsu.github.io/categories/%E7%AB%B6%E3%83%97%E3%83%AD/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Oct 2022 21:58:58 +0900</lastBuildDate><atom:link href="https://kokatsu.github.io/categories/%E7%AB%B6%E3%83%97%E3%83%AD/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AHC015参加記</title>
+      <link>https://kokatsu.github.io/posts/ahc015/</link>
+      <pubDate>Sun, 30 Oct 2022 21:58:58 +0900</pubDate>
+      
+      <guid>https://kokatsu.github.io/posts/ahc015/</guid>
+      <description>490位 kokatsuさんのトヨタ自動車 プログラミングコンテスト2022（AtCoder Heuristic Contest 015）での成績：490位
+パフォーマンス：1073相当
+レーティング：780→866 (+86) :)#AtCoder #トヨタ自動車プログラミングコンテスト2022（AtCoderHeuristicContest015） https://t.co/q7WcNFYjGH 入緑！！！！！
+&amp;mdash; kokatsu (@kokatsu_) October 30, 2022 問題のリンク
+考えたこと ~1:37 (28M) ローカル版のツールのlib.rsを見ながらキャンディーの移動とスコアを計算する関数をD言語に移植。 キャンディーを受け取る毎に4方向へ傾けた際に1番スコアが高い方向に傾ける。
+~2:59 (53M) 上記のコードを乱数を用いて変更を加えたが、得点が上がらなかった。 ビジュアライザを手で操作していると、1つの味を箱の1辺に集めていけば得点が上がりそうだとわかった。 とりあえず、最初に受け取る味のキャンディーの場合下に、それ以外のキャンディーの場合は右に傾ける解法で提出。 得点が53Mまで上がった。
+~3:07 (61M) 下に傾けるキャンディーの味を最初に受け取る味から1番数が多い味に変更することで61Mまで上がった。
+~4:00 1番数の多い味のキャンディーの場合下に傾けていき、下にキャンディーが溜まった場合に上以外の3方向で1番スコアが高くなる方向に傾けていく方針で実装。 しかし、思ったように得点が上がらない。 最初に提出していたコード内のキャンディーを入れる位置を求める関数が正しい位置を返していないことがわかった。 このミスに気づくのに30分以上費やしてしまった。
+Coord findCoordToPut(long[N][] mat, long num) { Coord ret; long cnt; foreach (i; 0 .. N) { foreach (j; 0 .. N) { if (mat[i][j] == 0) ++cnt; if (cnt &amp;gt;= num) ret.</description>
+    </item>
+    
     <item>
       <title>ABC274参加記</title>
       <link>https://kokatsu.github.io/posts/abc274/</link>

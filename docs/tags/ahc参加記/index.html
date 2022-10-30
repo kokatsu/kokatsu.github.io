@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html class="no-js" lang="ja">
 <head>
-	<meta name="generator" content="Hugo 0.104.3" />
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>kokatsu&#39;s blog</title>
+	<title>AHC参加記 - kokatsu&#39;s blog</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +14,7 @@
 
 	<link rel="stylesheet" href="/css/style.css">
 	
-	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="kokatsu's blog">
+	<link rel="alternate" type="application/rss+xml" href="/tags/ahc%E5%8F%82%E5%8A%A0%E8%A8%98/index.xml" title="kokatsu's blog">
 
 	<link rel="shortcut icon" href="/favicon.ico">
 		
@@ -40,7 +39,9 @@
 			<div class="primary">
 			
 <main class="main list" role="main">
-	<article class="list__item post">
+	<header class="main__header">
+		<h1 class="main__title">AHC参加記</h1>
+	</header><article class="list__item post">
 	
 	<header class="list__header">
 		<h2 class="list__title post__title">
@@ -61,31 +62,13 @@
 ~4:00 1番数の多い味のキャンディーの場合下に傾けていき、下にキャンディーが溜まった場合に上以外の3方向で1番スコアが高くなる方向に傾けていく方針で実装。 しかし、思ったように得点が上がらない。 最初に提出していたコード内のキャンディーを入れる位置を求める関数が正しい位置を返していないことがわかった。 このミスに気づくのに30分以上費やしてしまった。
 Coord findCoordToPut(long[N][] mat, long num) { Coord ret; long cnt; foreach (i; 0 .. N) { foreach (j; 0 .. N) { if (mat[i][j] == 0) ++cnt; if (cnt &gt;= num) ret.
 	</div>
-</article><article class="list__item post">
-	
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/posts/abc274/" rel="bookmark">
-			ABC274参加記
-			</a>
-		</h2>
-		
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		4完2ペナ93分 2289位
-kokatsuさんのキーエンスプログラミングコンテスト2022（AtCoder Beginner Contest 274）での成績：2289位
-パフォーマンス：975相当
-レーティング：1267→1240 (-27) :(#AtCoder #キーエンスプログラミングコンテスト2022（ABC274） https://t.co/lZV1NNlva1 緑が近くなってきた。。。
-&mdash; kokatsu (@kokatsu_) October 22, 2022 A問題 D言語のreal型の精度を信じて提出。
-import std; void main() { real A, B; readf(&#34;%f %f\n&#34;, A, B); real res = B / A; writefln(&#34;%.3f&#34;, res); } B問題 1行ごとにマスを読み込み、箱が置かれている列をカウントする。
-import std; void main() { int H, W; readf(&#34;%d %d\n&#34;, H, W); auto res = new int[](W); foreach (_; 0 .. H) { string C; readf(&#34;%s\n&#34;, C); foreach (i, c; C) { if (c == &#39;#&#39;) ++res[i]; } } writefln(&#34;%(%s %)&#34;, res); } C問題 番号$2i$と$2i+1$のアメーバは$A_{i}$の世代$+1$になるので、時系列順に処理していく。
-	</div>
 </article>
 </main>
 
 
 			</div>
-			<aside class="sidebar"><div class="widget-search widget">
+			
+<aside class="sidebar"><div class="widget-search widget">
 	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
 		<label>
 			<input class="widget-search__field" type="search" placeholder="検索…" value="" name="q" aria-label="検索…">
