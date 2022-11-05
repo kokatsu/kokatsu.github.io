@@ -2,7 +2,9 @@ baseURL = "https://kokatsu.github.io/"
 title = "kokatsu's blog"
 DefaultContentLanguage = "ja"
 languageCode = "ja-jp"
-paginate = "10"
+summarylength = 100
+hasCJKLanguage = true
+paginate = 10
 theme = "mainroad"
 publishDir = "docs"
 
